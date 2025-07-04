@@ -14,3 +14,13 @@ resources:
           properties:
             Name:  AD-Domain-Services
             Ensure: Present
+        - name:  RSAT-DNS-Server install
+          type: PSDesiredStateConfiguration/WindowsFeature
+          properties:
+            Name:  RSAT-DNS-Server
+            Ensure: Present
+        - name:  RSAT-ADDS install
+          type: PSDesiredStateConfiguration/WindowsFeature
+          properties:
+            Name:  RSAT-ADDS
+            Ensure: Present

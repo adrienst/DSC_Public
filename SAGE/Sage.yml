@@ -9,10 +9,10 @@ resources:
           properties:
             Name: NET-Framework-Core
             Ensure: Present
-        - name: example key value
-          type: Microsoft.Windows/Registry
-          properties:
-            keyPath: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
-            valueName: EnableLUA
-            valueData:
-              DWord: 0
+  - name: Change EnableLUA values to 0
+    type: Microsoft.Windows/Registry
+    properties:
+       keyPath: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+       valueName: EnableLUA
+       valueData:
+          DWord: 0

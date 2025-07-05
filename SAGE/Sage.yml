@@ -15,4 +15,4 @@ resources:
             keyPath: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
             valueName: EnableLUA
             valueData:
-              String: 0
+              DWord: 0
